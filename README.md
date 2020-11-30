@@ -59,8 +59,10 @@ $ sudo vncinitconfig --install-defaults
 $ sudo systemctl enable sudo vncserver-x11-serviced
 ```
 7. On the device you want to connect with download and open VNC Viewer. Then connect to the set IP on the Pi (192.168.1.1 in this example).
+
 Note: If you use ethernet for your Pi, the Pi will lose it's true internet connection and will be local only, this is not the case for over wifi I believe. 
 This can be adjusted by using Wifi while you are VNC'd into the Pi with a trick below. 
+
 Note: If your Pi does not autostart VNCServer on boot, try the other way below.
 ### Other option for autostart if other doesnt work.
 
