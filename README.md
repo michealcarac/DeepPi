@@ -51,7 +51,7 @@ Enable **everything** for this Project. SSH is optional, but is handy if you wan
 
 NOTE: If you are going to always use peripherals with your Raspberry Pi, you can skip to [Project](https://github.com/michealcarac/DeepPi/blob/main/README.md#project) as we will be setting up the Remote Desktop via VNC.
 ## Read before setting up VNC 
-Setting up VNC has a few caveouts. 
+Setting up VNC has a few caveats. 
 
 To start, when you turn on VNC Server on your Pi, the Pi is designated a dynamic IP address that you can then enter into any device that is on the same network into VNC Viewer. This is nice, however, that IP may change. Now, if you don't want to plug your peripherals back in, this can be fixed simply by installing a tool to surf your network for an IP address thats assigned to the Pi, or you can try raspberrypi.local but that may not work. Now, this method is the best for keeping internet connectivity on your Pi, but could lead into issues requiring you to put peripherals back into the Pi.  
 
