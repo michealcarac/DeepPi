@@ -5,6 +5,7 @@
 There are two options to install the operating system onto your raspberry pi.
 1. NOOBS
 2. Manual disk dumping. 
+
 NOOBS:
 
 https://www.raspberrypi.org/downloads/noobs/
@@ -51,6 +52,7 @@ If you are using Raspbian Jessie or newer, VNC server is installed at default.
 4. On Manjaro, go to your "Advanced Network Configuration" and either edit the ethernet that you and your Pi are connected to, or the same Wifi network. 
 5. Go to your Ipv4 settings and select a free static IP address like 192.168.1.2, just make sure it's not the same one as your Pi.
 6. Make it so the VNC Server starts on bootup by typing these into the terminal of your Pi:
+
 $ sudo vncinitconfig --install-defaults
 
 $ sudo systemctl enable sudo vncserver-x11-serviced
