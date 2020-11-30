@@ -49,7 +49,7 @@ If you are going to always use peripherals with your Raspberry Pi, you can skip 
 
 If you are using Raspbian Jessie or newer, VNC server is installed at default. 
 1. Connect both devices together with an Ethernet cord. *Optional if you are using Wifi* 
-2. Set the target Pi eth0/wlan0 Manual IP Address to something like 192.168.1.1.  *use wlan0 if using Wifi*
+2. Set the target Pi eth0/wlan0 Manual IP Address to something like 192.168.1.1.  *Use wlan0 if using Wifi*
 3. Depending on your OS, this will be a little different. Since I know the Linux route, we will go through that, but I suggest looking online for a different guide for a different OS. I am using Manjaro XFCE, a wing of Arch Linux, so it's a little different. The next set of instructions will be on your personal machine, not the Pi so skip to instruction 6.
 4. On Manjaro, go to your "Advanced Network Configuration" and either edit the ethernet that you and your Pi are connected to, or the same Wifi network. 
 5. Go to your Ipv4 settings and select a free static IP address like 192.168.1.2, just make sure it's not the same one as your Pi.
