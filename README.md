@@ -89,15 +89,12 @@ To have ethernet as local and wifi to access the rest of the world on your Pi:
 go to /etc/dhcpcd.conf
 
 insert:
-
+'''
 interface eth0
-
 metric 300
-
 interface wlan0
-
 metric 200
-
+'''
 Lower metric prioritizes one over other, so when we are connected to the pi over ethernet, we can then turn on the wifi when connected to it. 
 //
 
