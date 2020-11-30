@@ -1,11 +1,10 @@
-## Replication
+# Replication
 
-# Installing the OS
+## Installing the OS
 
 There are two options to install the operating system onto your raspberry pi.
 1. NOOBS
 2. Manual disk dumping. 
-
 NOOBS:
 
 https://www.raspberrypi.org/downloads/noobs/
@@ -13,20 +12,33 @@ https://www.raspberrypi.org/downloads/noobs/
 Manual disk dumping:
 
 Download the raspberry pi linux image or a supported OS.
-If you have a linux machine, the process is fairly easy, otherwise you will need to use something like Balena Etcher to write the given Img to a MicroSD card, or use the Raspberry Pi Imager.
+
+If you have a linux machine, the process is fairly easy, otherwise you will need to use something like Balena Etcher to write the given Img to a MicroSD card, or 
+use the Raspberry Pi Imager.
+
 For Linux:
+
 1.  First, unzip the downloaded file if it is in a zip folder.
 2. Run the following commands with your file, the drive path you are writing to, and the path to your file. 
 First get your drive path.
 $ lsblk -p
+
 Find which drive is your MicroSD card with the header /dev/
+
 Now run this command: 
+
 $ sudo dd bs=4M if=(filepath for iso) of=(filepath of sdcard) conv-fdatasync status=progress
+
 Example:
+
 $ sudo dd bs=4M if=/home/user/Downloads/2020-08-20-raspios-buster-armhf-full.img of=/dev/mmcblk0 conv=fdatasync status=progress
+
 If you do not have dd installed, install it to your system. 
+
 Now, eject the microSD card in your OS and remove it from your computer.
+
 Insert the microSD card inside of your Raspberry Pi and hook up a Keyboard, Mouse, and Monitor, then give the Pi power.
+
 When you boot up, go through the "Welcome to Raspberry Pi" screen and let it run its path until it's done.
 
 If you are going to always use peripherals with your Raspberry Pi, you can skip the next set of instructions as we will be setting up the Remote Desktop via VNC.
