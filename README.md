@@ -49,7 +49,7 @@ Go to your Raspberry Pi Configuration by clicking on the Raspberry in the top le
 
 Enable **everything** for this Project. SSH is optional, but is handy if you want to SSH in instead of using VNC. 
 
-NOTE: If you are going to always use peripherals with your Raspberry Pi, you can skip the next few sets of instructions as we will be setting up the Remote Desktop via VNC.
+NOTE: If you are going to always use peripherals with your Raspberry Pi, you can skip to [Project](https://github.com/michealcarac/DeepPi/blob/main/README.md#project) as we will be setting up the Remote Desktop via VNC.
 ## Read before setting up VNC 
 Setting up VNC has a few caveouts. 
 
@@ -57,7 +57,7 @@ To start, when you turn on VNC Server on your Pi, the Pi is designated a dynamic
 
 Another way is to set up a Static IP on your Pi which will make your Pi lose connection to the world wide web on that internet module (Ethernet or Wifi). That is the way that is described in full in this guide as that is what I personally prefer, but you can look up any sort of way to use your Raspberry Pi via VNC. At the time of writing this section, I have decided to use the dynamic way for the Pi Zero W as it only has one internet module, but I prefer the static method on my full sized Raspberry Pi for full control over the network side of the Pi. 
 
-If you decide to go the Dynamic route as most people will, skip to #Project and we will get into the project in full. My instructions to setting up the OS and networking may not be the best, but they are here if wanted to be used.  
+If you decide to go the Dynamic route as most people will, skip to [Project](https://github.com/michealcarac/DeepPi/blob/main/README.md#project) and we will get into the project in full. My instructions to setting up the OS and networking may not be the best, but they are here if wanted to be used.  
 ### Setting up Static VNC via Ethernet, although Wifi can be used. -Static
 
 If you are using Raspbian Jessie or newer, VNC server is installed at default. 
