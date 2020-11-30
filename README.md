@@ -27,7 +27,9 @@ $ lsblk -p
 ```
 Find which drive is your MicroSD card with the header /dev/
 
-Now run this command: 
+**MAKE ABSOLUTE SURE THE DRIVE IS CORRECT AS THIS COMMAND WILL OVERWRITE THE GIVEN DRIVE**
+
+Now run this command:
 ```
 $ sudo dd bs=4M if=(filepath for iso) of=(filepath of sdcard) conv-fdatasync status=progress
 ```
@@ -42,10 +44,21 @@ Now, eject the microSD card in your OS and remove it from your computer.
 Insert the microSD card inside of your Raspberry Pi and hook up a Keyboard, Mouse, and Monitor, then give the Pi power.
 
 When you boot up, go through the "Welcome to Raspberry Pi" screen and let it run its path until it's done.
+### Some Housekeeping on the Pi
+Go to your Raspberry Pi Configuration by clicking on the Raspberry in the top left > Preferences > Raspberry Pi Configuration > Interfaces
 
-If you are going to always use peripherals with your Raspberry Pi, you can skip the next set of instructions as we will be setting up the Remote Desktop via VNC.
+Enable **everything** for this Project. SSH is optional, but is handy if you want to SSH in instead of using VNC. 
 
-### Setting up VNC via Ethernet, although Wifi can be used. 
+NOTE: If you are going to always use peripherals with your Raspberry Pi, you can skip the next few sets of instructions as we will be setting up the Remote Desktop via VNC.
+## Read before setting up VNC 
+Setting up VNC has a few caveouts. 
+
+To start, when you turn on VNC Server on your Pi, the Pi is designated a dynamic IP address that you can then enter into any device that is on the same network into VNC Viewer. This is nice, however, that IP may change. Now, if you don't want to plug your peripherals back in, this can be fixed simply by installing a tool to surf your network for an IP address thats assigned to the Pi, or you can try raspberrypi.local but that may not work. Now, this method is the best for keeping internet connectivity on your Pi, but could lead into issues requiring you to put peripherals back into the Pi.  
+
+Another way is to set up a Static IP on your Pi which will make your Pi lose connection to the world wide web on that internet module (Ethernet or Wifi). That is the way that is described in full in this guide as that is what I personally prefer, but you can look up any sort of way to use your Raspberry Pi via VNC. At the time of writing this section, I have decided to use the dynamic way for the Pi Zero W as it only has one internet module, but I prefer the static method on my full sized Raspberry Pi for full control over the network side of the Pi. 
+
+If you decide to go the Dynamic route as most people will, skip to #Project and we will get into the project in full. My instructions to setting up the OS and networking may not be the best, but they are here if wanted to be used.  
+### Setting up Static VNC via Ethernet, although Wifi can be used. -Static
 
 If you are using Raspbian Jessie or newer, VNC server is installed at default. 
 1. Connect both devices together with an Ethernet cord. *Optional if you are using Wifi* 
@@ -58,12 +71,12 @@ If you are using Raspbian Jessie or newer, VNC server is installed at default.
 $ sudo vncinitconfig --install-defaults
 $ sudo systemctl enable sudo vncserver-x11-serviced
 ```
-7. On the device you want to connect with download and open VNC Viewer. Then connect to the set IP on the Pi (192.168.1.1 in this example).
+7. On the device you want to connect with download and open VNC Viewer. Then connect to the set IP on the Pi (192.168.1.1 in this example). The password will be the password you set on the Raspberry Pi. 
 
 Note: If you use ethernet for your Pi, the Pi will lose it's true internet connection and will be local only, this is not the case for over wifi I believe. 
 This can be adjusted by using Wifi while you are VNC'd into the Pi with a trick below. 
 
-Note: If your Pi does not autostart VNCServer on boot, try the other way below.
+Note: If your Pi does not autostart VNCServer on boot, try the other way below, it also may automatically start if you enable VNC in your interfaces. 
 ### Other option for autostart if other doesnt work.
 
 Create a VncServer.desktop file in /home/pi/.config/autostart
@@ -80,7 +93,7 @@ Name=VncServer
 Exec=sudo vncserver-x11-serviced
 StartupNotify=false
 ```
-### To have ethernet as local and wifi to access the rest of the world on your Pi
+### To have ethernet as local and wifi to access the rest of the world on your Pi -Static
 go to /etc/dhcpcd.conf
 
 Insert:
@@ -92,3 +105,4 @@ metric 200
 ```
 Lower metric prioritizes one over other, so when we are connected to the pi over ethernet, we can then turn on the wifi when connected to it. 
 
+## Project
