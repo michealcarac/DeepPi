@@ -2,15 +2,15 @@
 
 ## Installing the OS
 
-There are two options to install the operating system onto your raspberry pi.
+### There are two options to install the operating system onto your raspberry pi.
 1. NOOBS
 2. Manual disk dumping. 
 
-NOOBS:
+### NOOBS:
 
 https://www.raspberrypi.org/downloads/noobs/
 
-Manual disk dumping:
+### Manual disk dumping:
 
 Download the raspberry pi linux image or a supported OS.
 
@@ -45,7 +45,7 @@ When you boot up, go through the "Welcome to Raspberry Pi" screen and let it run
 
 If you are going to always use peripherals with your Raspberry Pi, you can skip the next set of instructions as we will be setting up the Remote Desktop via VNC.
 
-Setting up VNC via Ethernet, although Wifi can be used. 
+### Setting up VNC via Ethernet, although Wifi can be used. 
 
 If you are using Raspbian Jessie or newer, VNC server is installed at default. 
 1. Connect both devices together with an Ethernet cord. *Optional if you are using Wifi 
@@ -65,7 +65,7 @@ Note: If your Pi does not autostart VNCServer on boot, try the other way below.
 
 //
 
-Other option for autostart if other doesnt work.
+### Other option for autostart if other doesnt work.
 
 Create a VncServer.desktop file in /home/pi/.config/autostart
 
@@ -85,7 +85,7 @@ StartupNotify=false
 
 //
 
-To have ethernet as local and wifi to access the rest of the world on your Pi
+### To have ethernet as local and wifi to access the rest of the world on your Pi
 go to /etc/dhcpcd.conf
 
 Insert:
