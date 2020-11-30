@@ -1,5 +1,4 @@
-# Replication
-
+# Initial Setup
 ## Installing the OS
 Note: Please be cautious and refer to any online resource if you feel this guide is inadequate or inaccurate. 
 ### There are two options to install the operating system onto your raspberry pi.
@@ -115,4 +114,3 @@ Name=VncServer
 Exec=sudo vncserver-x11-serviced
 StartupNotify=false
 ```
-## Project
