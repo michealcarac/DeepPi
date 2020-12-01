@@ -17,8 +17,9 @@ This entire project will be written in Python, so it would be beneficial to have
 2. Docker
 3. Jypter Notebook
 4. Google Colab (Optional to Jypter Notebook if you don't want to train locally)
-5. Tensorflow 
-6. OpenCV
+5. Tensorflow
+6. Python3
+7. OpenCV
 
 **Now, only some of these programs will be needed on your Computer and some on your Raspberry Pi:**
 
@@ -27,12 +28,13 @@ This entire project will be written in Python, so it would be beneficial to have
 2. Docker
 3. Jypter or Colab
 4. Tensorflow
+5. Anaconda
 
 **Raspberry Pi Zero W:**
 1. Tensorflow
 2. OpenCV
 
-***Guide to install Keras, Docker, Jypter Notebook, and Tensorflow with a small example [Here](https://www.digikey.com/en/maker/projects/getting-started-with-machine-learning-using-tensorflow-and-keras/0746640deea84313998f5f95c8206e5b)***
+***Guide to install Keras, Docker, Jypter Notebook, Tensorflow, and Anaconda with a small example [Here](https://www.digikey.com/en/maker/projects/getting-started-with-machine-learning-using-tensorflow-and-keras/0746640deea84313998f5f95c8206e5b) Please only follow this guide to after you download Anaconda***
 
 ## Wake Word Model
 
