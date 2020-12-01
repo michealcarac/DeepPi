@@ -17,15 +17,15 @@ The following programs that will be used
 5. Tensorflow
 6. OpenCV
 
-Now, only some of these programs will be on your computer/raspberry pi respectfully.
+Now, only some of these programs will be needed on your Computer and some on your Raspberry Pi:
 
-Computer:
+**Computer:**
 1. Keras
 2. Docker
 3. Jypter or Colab
 4. Tensorflow
 
-Raspberry Pi:
+**Raspberry Pi:**
 1. Tensorflow
 2. OpenCV
 
