@@ -36,10 +36,10 @@ This entire project will be written in Python, so it would be beneficial to have
 
 ***Guide to install Keras, Docker, Jypter Notebook, Tensorflow, and Anaconda with a small example [Here](https://www.digikey.com/en/maker/projects/getting-started-with-machine-learning-using-tensorflow-and-keras/0746640deea84313998f5f95c8206e5b) Please only follow this guide to after you download Anaconda***
 Note: When installing tensorflow in the Anaconda created environment, do 
-'''
+```
 $ conda install tensorflow
-'''
-Instead of using '''pip'''
+```
+Instead of using ```pip```
 
 ## Wake Word Model
 
