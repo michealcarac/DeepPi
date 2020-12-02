@@ -32,7 +32,7 @@ This entire project will be written in Python, so it would be beneficial to have
 5. Anaconda
 
 **Raspberry Pi Zero W:**
-1. Tensorflow
+1. Tensorflow Lite
 2. OpenCV
 
 ***Guide to install Keras, Docker, Jypter Notebook, Tensorflow, and Anaconda with a small example [Here](https://www.digikey.com/en/maker/projects/getting-started-with-machine-learning-using-tensorflow-and-keras/0746640deea84313998f5f95c8206e5b) Please only follow this guide to after you download Anaconda***
@@ -42,12 +42,16 @@ Note: When installing tensorflow in the Anaconda created environment, do
 $ conda install tensorflow
 ```
 Instead of using ```pip``` as pip may cause a certificate issue
+***Guide to install TensorFlow Lite on your Pi [Here](https://www.tensorflow.org/lite/guide/python)***
 
 ## Wake Word Model
 
 The guide that we followed to create this can be found [Here](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a). All credit belongs to Shawn Hymel of Digi-Key. I strongly recommend checking out some of his other projects. 
 
+Credit to his [Github](https://github.com/ShawnHymel/tflite-speech-recognition) for files that we edited for what we wanted. 
+
 First, go to your created Anaconda environment, then install the ```python_speech_features``` from either pip or Anaconda with:
 ```
 conda install -c bricew python_speech_features
 ```
+Now install Tensorflow lite on your Raspberry Pi with
