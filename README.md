@@ -5,7 +5,7 @@ This entire project will be written in Python, so it would be beneficial to have
 
 ***Please read [InitialSetup](https://github.com/michealcarac/DeepPi/blob/main/InitialSetup.md) first if haven't already***
 
-The guide that we followed to create this can be found [Here](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a). All credit belongs to Shawn Hymel of Digi-Key.
+The guide that we followed to create this can be found [Here](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a). All credit belongs to Shawn Hymel of Digi-Key. I strongly recommend checking out some of his other projects. 
 
 ## Getting Started
 **For this project, you will need a few things**
