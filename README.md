@@ -68,16 +68,15 @@ Note: Make sure you open the Jupyter Notebook in the correct Anaconda environmen
 ```
 1mfcc_extraction_speech.ipynb
 ```
+Note: Included in this github is a ```RemoveUnwantedWords.py``` this is meant to be placed inside of your dataset directory and ran with ```$ python3 RemoveUnwantedWords.py``` in a terminal that is in the same directory. This script will remove any words that you do not want (You will need to edit it). This works with the google dataset talked about before, and has not been tested on any other, please use at your own risk. We do this because if we do not care about a word, there is no point in keeping it in our dataset which will slow training down.  
+
 Note: When you run the notebook, any errors for modules can be fixed by using Anaconda to download them, you may have to do this a few times. Also make sure you are in the correct Anaconda environment when you install these. Some packages that I find a little harder to install will have the download at the bottom of this instruction step.
 
 1. Click on the play button and make sure there are no modules that are not present, if there is refer to above^
 2. Before you run this one, you want to adjust the path to your filesystems path to the *datatset*
-3. Change nothing, run
-4. Change nothing, run
-5. Change nothing, run
+3. The rest can be run with no changes unless there is a module you need, then refer to above ^
 
-
-
+In the end, you should have a npz file. 
 
 If you cannot find the librosa package try this:
 ```
@@ -95,5 +94,15 @@ If you have issues with a namespace named "gst": (Note, this is on linux/Raspber
 ```
 sudo apt install python3-gst-1.0
 ```
+#### File 2
+```
+2mfcc_clasifier_speech.ipynb
+```
+1. Just make sure you have the modules installed in your Anaconda environment
+2. Change the dataset_path variable to the path of your dataset
+3. Change the feature_sets_path to the directory that holds the Jupyter Notebook and change feature_sets_filename to the npz file that we created in the first file 
+
+
+
 
 Now install Tensorflow lite on your Raspberry Pi with
