@@ -100,7 +100,10 @@ sudo apt install python3-gst-1.0
 ```
 1. Just make sure you have the modules installed in your Anaconda environment
 2. Change the dataset_path variable to the path of your dataset
-3. Change the feature_sets_path to the directory that holds the Jupyter Notebook and change feature_sets_filename to the npz file that we created in the first file 
+3. Change the feature_sets_path to the directory that holds the Jupyter Notebook and change feature_sets_filename to the npz file that we created in the first file. Also make sure you change the wake_word in this section to the one you desire (You need to train for each individual word)
+
+Continue to run the rest of the cells, keep in mind the training may take a little bit
+
 
 
 
