@@ -74,6 +74,7 @@ Note: Included in this github is a ```RemoveUnwantedWords.py``` this is meant to
 
 Note: When you run the notebook, any errors for modules can be fixed by using Anaconda to download them, you may have to do this a few times. Also make sure you are in the correct Anaconda environment when you install these. Some packages that I find a little harder to install will have the download at the bottom of this instruction step.
 
+*Cells to change:*
 1. Click on the play button and make sure there are no modules that are not present, if there is refer to above^
 2. Before you run this one, you want to adjust the path to your filesystems path to the *datatset*
 3. The rest can be run with no changes unless there is a module you need, then refer to above ^
@@ -100,6 +101,8 @@ sudo apt install python3-gst-1.0
 ```
 2mfcc_clasifier_speech.ipynb
 ```
+
+*Cells to change:*
 1. Just make sure you have the modules installed in your Anaconda environment
 2. Change the dataset_path variable to the path of your dataset
 3. Change the feature_sets_path to the directory that holds the Jupyter Notebook and change feature_sets_filename to the npz file that we created in the first file. Also make sure you change the wake_word in this section to the one you desire (You need to train for each individual word)
@@ -110,6 +113,8 @@ Continue to run the rest of the cells, keep in mind the training may take a litt
 ```
 3tflite_model_converter_speech.ipynb
 ```
+
+*Cells to change:*
 1. Just make sure you have the modules installed in your Anaconda environment
 2. Change these to the correct word
 3. Run this and you are done training your model
