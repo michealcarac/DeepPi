@@ -29,7 +29,7 @@ This entire project will be written in Python, so it would be beneficial to have
 2. Docker
 3. Jypter or Colab
 4. Tensorflow
-5. Anaconda
+5. Anaconda (Optional, but nice so you don't have conflicting modules)
 
 **Raspberry Pi Zero W:**
 1. Tensorflow Lite
