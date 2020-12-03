@@ -46,7 +46,9 @@ Instead of using ```pip``` as pip may cause a certificate issue
 
 ## Wake Word Model
 
-The guide that we followed to create this can be found [Here](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a). All credit belongs to Shawn Hymel of Digi-Key. I strongly recommend checking out some of his other projects. 
+The guide that we followed to create this can be found below in parts. All credit belongs to Shawn Hymel of Digi-Key. I strongly recommend checking out some of his other projects.
+
+[Part 1](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-1-wake-word-feature-extraction/54e1ce8520154081a58feb301ef9d87a) [Part 2](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-2-speech-recognition-model-training/d8d04a2b60a442cf8c3fa5c0dd2a292b) [Part 3](https://www.digikey.com/en/maker/projects/tensorflow-lite-tutorial-part-3-speech-recognition-on-raspberry-pi/8a2dc7d8a9a947b4a953d37d3b271c71)
 
 Credit to his [Github](https://github.com/ShawnHymel/tflite-speech-recognition) for files that we edited for what we wanted. 
 
