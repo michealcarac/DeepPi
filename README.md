@@ -122,7 +122,7 @@ I recommend putting your tflite models in a folder, but you do not have to. In t
 
 You can also now delete the h5 files as the are now converted to tflite models. 
 
-**After this point, you can move all of these folders over to your Raspberry Pi, and install Tensorflow-Lite on your Raspberry Pi. The python scripts will be for use on the Raspberry Pi Zero W as if it is fully constructed with the component list above.**
+**After this point, you can move all of these folders over to your Raspberry Pi, and install [TensorFlow-Lite](https://www.tensorflow.org/lite/guide/python) on your Raspberry Pi. The python scripts will be for use on the Raspberry Pi Zero W as if it is fully constructed with the component list above.**
 
 #### File 4
 
