@@ -102,10 +102,22 @@ sudo apt install python3-gst-1.0
 2. Change the dataset_path variable to the path of your dataset
 3. Change the feature_sets_path to the directory that holds the Jupyter Notebook and change feature_sets_filename to the npz file that we created in the first file. Also make sure you change the wake_word in this section to the one you desire (You need to train for each individual word)
 
-Continue to run the rest of the cells, keep in mind the training may take a little bit
+Continue to run the rest of the cells, keep in mind the training may take a little bit, repeat all of this to get the number of desired words
+
+#### File 3
+```
+3tflite_model_converter_speech.ipynb
+```
+1. Just make sure you have the modules installed in your Anaconda environment
+2. Change these to the correct word
+3. Run this and you are done training your model
+I recommend putting your tflite models in a folder, but you do not have to. In this github, there is an example ```stop``` wake word that is trained, so do feel free to use that. 
+
+You can also now delete the h5 files as the are now converted to tflite models. 
+
+**After this point, you can move all of these folders over to your Raspberry Pi, and install Tensorflow-Lite on your Raspberry Pi. The python scripts will be for use on the Raspberry Pi Zero W as if it is fully constructed with the component list above.**
+
+#### File 4
 
 
 
-
-
-Now install Tensorflow lite on your Raspberry Pi with
