@@ -157,6 +157,8 @@ sudo pip3 install spidev
 sudo pip3 install apa102-pi
 ```
 
+To get a better understanding of the LEDs that we will be using, [Here](https://github.com/tinue/apa102-pi) is the github to the APA102 LED Python Library.
+
 Python Module for the onboard Button (Mapped to GPIO 17)
 ```
 sudo pip3 install rpi.gpio
@@ -166,5 +168,4 @@ Python Module for the onboard Mic's
 ```
 sudo pip3 install pyaudio
 ```
-To get a better understanding of the LEDs that we will be using, [Here](https://github.com/tinue/apa102-pi) is the github to the APA102 LED Python Library.
 
