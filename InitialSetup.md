@@ -3,13 +3,13 @@
 Note: Please be cautious and refer to any online resource if you feel this guide is inadequate or inaccurate. 
 ### There are two options to install the operating system onto your raspberry pi.
 1. NOOBS
-2. Manual disk dumping. 
+2. Manual disk writing. 
 
 ### NOOBS:
 
 https://www.raspberrypi.org/downloads/noobs/
 
-### Manual disk dumping:
+### Manual disk writing:
 
 Download the raspberry pi linux image or a supported OS.
 
@@ -150,16 +150,16 @@ git clone https://github.com/respeaker/mic_hat.git
 
 Python Module for the onboard LED's 
 ```
-sudo pip install spidev
+sudo pip3 install spidev
 ```
 
 Python Module for the onboard Button (Mapped to GPIO 17)
 ```
-sudo pip install rpi.gpio
+sudo pip3 install rpi.gpio
 ```
 
 Python Module for the onboard Mic's 
 ```
-sudo pip install pyaudio
+sudo pip3 install pyaudio
 ```
 
