@@ -136,5 +136,7 @@ To configure the sound settings with ```AlsaMixer```, we open Alsamixer by typin
 
 If you cannot press f6, type in a terminal ```$ sudo nano /usr/share/alsa/alsa.conf``` and change ```defaults.ctl.card 0``` and ```defaults.pcm.card 0``` to the number of device found before. Since our 2mic was card 2, we changed the 0 to a 2. Then open Alsamixer again and configure it to how you want.    
 ### To use in code (Python)
+We used this guide to know all of the modules we will use [Here](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)
 
+Look at our code to get an understanding on how to use the python modules in the best way. 
 
