@@ -120,8 +120,11 @@ Before we get started, we need to talk about a few things. I do not recommend us
 First we are going to set up the pi hat. 
 
 General github for the device: [Here](https://github.com/respeaker)
+
 For Drivers [Here](https://github.com/respeaker/seeed-voicecard)
+
 For General Information on the board [Here](https://github.com/respeaker/mic_hat)
+
 Documentation on the Audio Codec (WM8960) [Here](https://www.waveshare.com/w/upload/5/54/WM8960_Audio_HAT_User_Manual_EN.pdf)
 
 ### To Install
@@ -162,4 +165,4 @@ Python Module for the onboard Mic's
 ```
 sudo pip3 install pyaudio
 ```
-
+To get a better understanding of the LEDs that we will be using, [Here](https://github.com/tinue/apa102-pi) is the github to the APA102 LED Python Library 
