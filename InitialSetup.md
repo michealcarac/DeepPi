@@ -51,11 +51,11 @@ Enable **everything** for this Project. SSH is optional, but is handy if you wan
 NOTE: If you are going to always use peripherals with your Raspberry Pi, you can skip to [Project](https://github.com/michealcarac/DeepPi/blob/main/README.md#project) as we will be setting up the Remote Desktop via VNC.
 ## VNC 
 ### ***PLEASE READ THIS BEFORE SETTING UP VNC***
-I by no means am a professional with networks so my instructions may not be the best nor the most accurate, but it written to how I understand it. 
+I by no means am a professional with networks so my instructions may not be the best nor the most accurate, but it's written to how I understand it. 
 
 Setting up VNC has a few caveats. 
 
-Dynamic: When you turn on VNC Server on your Pi, the Pi is designated a dynamic IP address that you can then enter into any device that is on the same network into VNC Viewer. This is nice, however, that IP may change. Now, if you don't want to plug your peripherals back in, this can be fixed simply by installing a tool to surf your network for an IP address thats assigned to the Pi, or you can try raspberrypi.local but that may not work. Now, this method is the best for keeping internet connectivity on your Pi, but could lead into issues requiring you to put peripherals back into the Pi.  
+Dynamic: When you turn on VNC Server on your Pi, the Pi is designated a dynamic IP address that you can then enter into any device that is on the same network into VNC Viewer. This is nice, however, that IP may change, for maybe if you switch devices. Now, if you don't want to plug your peripherals back in, this can be fixed simply by installing a tool to surf your network for an IP address thats assigned to the Pi, or you can try raspberrypi.local but that may not work. Now, this method is the best for keeping internet connectivity on your Pi, but could lead into issues requiring you to put peripherals back into the Pi.  
 
 Static: Another way is to set up a Static IP on your Pi which will make your Pi lose connection to the world wide web on that internet module (Ethernet or Wifi). That is the way that is described in full in this guide as that is what I personally prefer, but you can look up any sort of way to use your Raspberry Pi via VNC. At the time of writing this section, I have decided to use the dynamic way for the Pi Zero W as it only has one internet module, but I prefer the static method on my full sized Raspberry Pi for full control over the network side of the Pi. 
 
@@ -75,7 +75,7 @@ This can be adjusted by using Wifi/Ethernet while you are VNC'd into the Pi with
 
 Note: If your Pi does not autostart VNCServer on boot, try the way below, it also may automatically start if you enable VNC in your interfaces. 
 ### To have ethernet as local and wifi to access the rest of the world on your Pi -Static
-go to /etc/dhcpcd.conf
+Go to /etc/dhcpcd.conf
 
 Insert:
 ```
@@ -84,7 +84,7 @@ metric 300
 interface wlan0
 metric 200
 ```
-Lower metric prioritizes one over other, so when we are connected to the pi over ethernet, we can then turn on the wifi when connected to it.
+Lower metric prioritizes one over other, so when we are connected to the Pi over ethernet, we can then turn on the wifi when connected to it.
 Do the opposite if you are using Wifi for the static. 
 
 ### Setting up Dynamic VNC via Ethernet, although Wifi can be used. -Dynamic
@@ -117,9 +117,7 @@ StartupNotify=false
 ## Setting up the Pi
 Before we get started, we need to talk about a few things. I do not recommend using VNC with the Pi Zero. It simply cannot run VNC in a stable manner and is not going to be good for developing. Knowing that, we will be writing all of our code and doing our testing on a full sized Raspberry Pi, and once we want to implement to the zero, we will move the SD card to the zero. 
 ### Audio Pi Hat
-First we are going to set up the pi hat. 
-
-General github for the device: [Here](https://github.com/respeaker)
+First we are going to set up the Pi hat. 
 
 For Drivers [Here](https://github.com/respeaker/seeed-voicecard)
 
@@ -130,7 +128,7 @@ Documentation on the Audio Codec (WM8960) [Here](https://www.waveshare.com/w/upl
 ### To Install
 1. Power on your Raspberry Pi without the Pi hat hooked up, then refer to the drivers [Here](https://github.com/respeaker/seeed-voicecard) and install them according to the instructions
 2. Power off your Raspberry Pi and install the Pi hat, then Power it back on and it will be ready for use. 
-3. Configure the sound settings
+3. Configure the sound settings  -->
 First we need to find the number of the device we want to configure.
 
 When in a terminal type ```$ cd seeed-voicecard``` and then run ```$ aplay -l``` and ```$ arecord -l```. Keep track of the number of card that is the seeed2micvoicec.
@@ -165,4 +163,5 @@ Python Module for the onboard Mic's
 ```
 sudo pip3 install pyaudio
 ```
-To get a better understanding of the LEDs that we will be using, [Here](https://github.com/tinue/apa102-pi) is the github to the APA102 LED Python Library 
+To get a better understanding of the LEDs that we will be using, [Here](https://github.com/tinue/apa102-pi) is the github to the APA102 LED Python Library.
+
