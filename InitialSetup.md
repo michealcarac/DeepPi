@@ -140,3 +140,26 @@ We used this guide to know all of the modules we will use [Here](https://wiki.se
 
 Look at our code to get an understanding on how to use the python modules in the best way. 
 
+General info: 
+
+To test these next modules out, there is some test code here
+
+```
+git clone https://github.com/respeaker/mic_hat.git
+```
+
+Python Module for the onboard LED's 
+```
+sudo pip install spidev
+```
+
+Python Module for the onboard Button (Mapped to GPIO 17)
+```
+sudo pip install rpi.gpio
+```
+
+Python Module for the onboard Mic's 
+```
+sudo pip install pyaudio
+```
+
