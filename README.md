@@ -45,6 +45,7 @@ Note: When installing tensorflow in the Anaconda created environment, do
 $ conda install tensorflow
 ```
 Instead of using ```pip``` as pip may cause a certificate issue
+
 ***Guide to install TensorFlow Lite on your Pi [Here](https://www.tensorflow.org/lite/guide/python)***
 
 ## Wake Word Model
