@@ -149,9 +149,12 @@ To test these next modules out, there is some test code here
 git clone https://github.com/respeaker/mic_hat.git
 ```
 
-Python Module for the onboard LED's 
+Python Modules for the onboard LED's 
 ```
 sudo pip3 install spidev
+```
+```
+sudo pip3 install apa102-pi
 ```
 
 Python Module for the onboard Button (Mapped to GPIO 17)
