@@ -114,3 +114,27 @@ Name=VncServer
 Exec=sudo vncserver-x11-serviced
 StartupNotify=false
 ```
+## Setting up the Pi
+Before we get started, we need to talk about a few things. I do not recommend using VNC with the Pi Zero. It simply cannot run VNC in a stable manor and is not going to be good for developing. Knowing that, we will be writing all of our code and doing our testing on a full sized Raspberry Pi, and once we want to implement to the zero, we will move the SD card to the zero. 
+### Audio Pi Hat
+First we are going to set up the pi hat. 
+
+General github for the device: [Here](https://github.com/respeaker)
+For Drivers [Here](https://github.com/respeaker/seeed-voicecard)
+For General Information on the board [Here](https://github.com/respeaker/mic_hat)
+Documentation on the audio Chip [Here](https://www.waveshare.com/w/upload/5/54/WM8960_Audio_HAT_User_Manual_EN.pdf)
+
+### To Install
+1. Power on your Raspberry Pi without the Pi hat hooked up, then refer to the drivers [Here](https://github.com/respeaker/seeed-voicecard) and install them according to the instructions
+2. Power off your Raspberry Pi and install the Pi hat, then Power it back on and it will be ready for use. 
+3. Configure the sound settings
+First we need to find the number of the device we want to configure.
+
+When in a terminal type ```$ cd seeed-voicecard``` and then run ```$ aplay -l``` and ```$ arecord -l```. Keep track of the number of card that is the seeed2micvoicec.
+
+To configure the sound settings with ```AlsaMixer```, we open Alsamixer by typing ```sudo Alsamixer``` in a command terminal. We then press f6 to select the sound device. 
+
+If you cannot press f6, type in a terminal ```$ sudo nano /usr/share/alsa/alsa.conf``` and change ```defaults.ctl.card 0``` and ```defaults.pcm.card 0``` to the number of device found before. Since our 2mic was card 2, we changed the 0 to a 2. Then open Alsamixer again and configure it to how you want.    
+### To use in code (Python)
+
+
